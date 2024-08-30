@@ -6,34 +6,32 @@ algoritmo "Exercício 22"
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
 
-H1, SalarioMes,ValorExtra,SalarioTotal,H2,H3: real
+H1, SalarioMes,ValorExtra,SalarioTotal,HorasExtras,Valorporhora: real
 
 inicio
-escreval ("---------------------------------------------------------------------------")
+escreval ("-------------------------------------------------------------------------------")
 escreva("informe o número de horas de trabalho no mês? ")
 leia(H1)
 escreva("Informe o valor recebido por hora: R$")
-leia(H3)
-H2<-H1-160
-SalarioMes<-160*H3
+leia(ValorPorhora)
+HorasExtras <-H1-160
+SalarioMes<-160*Valorporhora 
     se (H1>160) entao
-        ValorExtra<-(H2*H3)+((H2*H3)*50)/100
+        ValorExtra<-(HorasExtras*Valorporhora)+((HorasExtras*Valorporhora)*50)/100
         SalarioTotal<-SalarioMes+ValorExtra
            
-            senao se (H1<160) entao
-              SalarioTotal<-H1*H3
+    senao
+        se (H1<=160) entao
+            SalarioTotal<-SalarioMes
                                  
-                     senao se (H1=160) entao
-                         SalarioTotal<-SalarioMes
-                     fimse
-             fimse 
+        fimse 
         
                   
     fimse
 escreval ("-------------------------------------------------------------------------------")
 escreval ("O número de horas trabalhadas no mês foram de ",H1,"H")
-escreval ("o número de horas extras trabalhadas no mês pelo funcionário, foram de: ",H2,"H")
-escreval ("O salário pago, por hora, corresponde a R$",H3)
+escreval ("o número de horas extras trabalhadas no mês pelo funcionário, foram de ",HorasExtras,"H")
+escreval ("O salário pago, por hora, corresponde a R$",Valorporhora:1:2)
 escreval ("O salário total, acrescido as horas extras, é de R$",Salariototal:1:2)
 escreval ("-------------------------------------------------------------------------------")
 fimalgoritmo
