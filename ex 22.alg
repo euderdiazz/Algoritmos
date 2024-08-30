@@ -6,20 +6,22 @@ algoritmo "Exercício 22"
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
 
-H1, SalarioMes,ValorExtra,SalarioTotal,H2: real
+H1, SalarioMes,ValorExtra,SalarioTotal,H2,H3: real
 
 inicio
 escreval ("---------------------------------------------------------------------------")
 escreva("informe o número de horas de trabalho no mês? ")
 leia(H1)
+escreva("Informe o valor recebido por hora: R$")
+leia(H3)
 H2<-H1-160
-SalarioMes<-160*22.40
+SalarioMes<-160*H3
     se (H1>160) entao
-        ValorExtra<-(H2*22.40)+((H2*22.40)*50)/100
+        ValorExtra<-(H2*H3)+((H2*H3)*50)/100
         SalarioTotal<-SalarioMes+ValorExtra
            
             senao se (H1<160) entao
-              SalarioTotal<-H1*22.40
+              SalarioTotal<-H1*H3
                                  
                      senao se (H1=160) entao
                          SalarioTotal<-SalarioMes
@@ -31,7 +33,7 @@ SalarioMes<-160*22.40
 escreval ("-------------------------------------------------------------------------------")
 escreval ("O número de horas trabalhadas no mês foram de ",H1,"H")
 escreval ("o número de horas extras trabalhadas no mês pelo funcionário, foram de: ",H2,"H")
-escreval ("O salário pago, por hora, corresponde a R$22.40")
+escreval ("O salário pago, por hora, corresponde a R$",H3)
 escreval ("O salário total, acrescido as horas extras, é de R$",Salariototal:1:2)
 escreval ("-------------------------------------------------------------------------------")
 fimalgoritmo
