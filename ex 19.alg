@@ -18,9 +18,9 @@ leia(V2)
     senao se (V1<V2) entao
             escreval ("O maior valor é ", V2)
         senao se (V1=V2) entao
-            escreval ("Não é permitido valores iguais")
+            escreval ("Não é permitido inserir valores iguais")
+        fimse
                 fimse
-                    fimse
     fimse
 
 fimalgoritmo
