@@ -33,8 +33,6 @@ escreval("Média final:",Med:2:2)
 
 
 
-teste <- "Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
+
 
 fimalgoritmo
