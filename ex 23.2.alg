@@ -22,10 +22,8 @@ leia(sexo)
         peso_ideal<-(72.7*altura)-58
              se sexo = "F" entao
                  peso_ideal<-(62.1*altura)-44.7
-            fimse
-                se sexo <> "F" ou "M"
-                escreva("Comando não permitido! O sexo deve ser definido
-        
+           fimse
+       
     fimse
 escreval("Olá, ",nome," seu peso ideal é de ",peso_ideal:1:2)
 fimalgoritmo
