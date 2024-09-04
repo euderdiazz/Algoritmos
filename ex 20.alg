@@ -16,7 +16,7 @@ escreva("Digite o segundo número: ")
 leia(N2)
     se (N1>N2) entao
     escreval (N2,",",N1)
-    senao se (N1>N2) entao
+    senao se (N1<N2) entao
         escreval (N1,",",N2)
     senao se (N1=N2) entao
         escreval ("Os valores ",N1," e ",N2," não são diferentes")

@@ -15,7 +15,7 @@ escreva("Qual sua massa (em Kg)? ")
 leia(massa)
 IMC<-massa/(H^2)
 
-    se ((IMC>=18.5) e (IMC<=25)) entao
+    se (IMC>=18.5) e (IMC<=25) entao
         escreval ("Seu IMC é de",IMC:4:2," e é considerado dentro dos padrões.")
     senao
         escreval ("Seu IMC(",IMC:4:2,") está abaixo do considerado normal.")
